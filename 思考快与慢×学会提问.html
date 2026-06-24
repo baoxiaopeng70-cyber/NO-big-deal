@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>思维框架整合 | 思考快与慢 × 学会提问</title>
+<style>
+:root {
+  --color-background-primary: #ffffff;
+  --color-background-secondary: #f5f5f4;
+  --color-background-tertiary: #eeece8;
+  --color-background-info: #e6f1fb;
+  --color-background-warning: #faeeda;
+  --color-background-success: #eaf3de;
+  --color-background-danger: #fcebeb;
+  --color-text-primary: #1a1a18;
+  --color-text-secondary: #5f5e5a;
+  --color-text-info: #0c447c;
+  --color-text-warning: #633806;
+  --color-text-success: #3b6d11;
+  --color-text-danger: #791f1f;
+  --color-border-tertiary: rgba(0,0,0,0.12);
+  --color-border-secondary: rgba(0,0,0,0.22);
+  --color-border-info: rgba(23,95,165,0.35);
+  --color-border-warning: rgba(99,56,6,0.3);
+  --color-border-success: rgba(59,109,17,0.3);
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background-primary: #1c1c1a;
+    --color-background-secondary: #252523;
+    --color-background-tertiary: #2c2c2a;
+    --color-background-info: #042c53;
+    --color-background-warning: #412402;
+    --color-background-success: #173404;
+    --color-background-danger: #501313;
+    --color-text-primary: #e8e8e4;
+    --color-text-secondary: #a0a09a;
+    --color-text-info: #b5d4f4;
+    --color-text-warning: #fac775;
+    --color-text-success: #c0dd97;
+    --color-text-danger: #f7c1c1;
+    --color-border-tertiary: rgba(255,255,255,0.1);
+    --color-border-secondary: rgba(255,255,255,0.18);
+    --color-border-info: rgba(181,212,244,0.25);
+    --color-border-warning: rgba(250,199,117,0.25);
+    --color-border-success: rgba(192,221,151,0.25);
+  }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--color-background-tertiary);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+p { margin: 0; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+</style>
+</head>
+<body>
+<h2 class="sr-only">思维框架整合：系统1偏差识别与批判性提问检查清单，日常思考应用指南</h2>
+<div style="padding:1rem 0;">
+<div style="text-align:center;margin-bottom:1.5rem;">
+  <p style="font-size:11px;color:var(--color-text-secondary);letter-spacing:2px;margin-bottom:8px;">思维框架整合</p>
+  <p style="font-size:28px;font-weight:500;margin-bottom:8px;"><span style="color:var(--color-text-info);">思考快与慢</span><span style="color:var(--color-text-secondary);padding:0 12px;">×</span><span style="color:var(--color-text-warning);">学会提问</span></p>
+  <p style="font-size:14px;color:var(--color-text-secondary);">日常交流与思考的双系统检查框架</p>
+</div>
+<div style="background:var(--color-background-success);border:0.5px solid var(--color-border-success);border-radius:var(--border-radius-lg);padding:12px 16px;margin-bottom:1.5rem;display:flex;gap:12px;align-items:flex-start;">
+  <p style="font-size:13px;color:var(--color-text-success);line-height:1.6;margin:0;"><strong>核心连接：</strong>系统1给出直觉反应，学会提问的清单就是激活系统2的工具。遇到重要判断，先识别哪个偏差在起作用，再用对应的提问检验它。</p>
+</div>
+<div style="display:grid;grid-template-columns:minmax(0,1fr) 128px minmax(0,1fr);gap:12px;margin-bottom:1.5rem;align-items:start;">
+
+  <div style="display:flex;flex-direction:column;gap:10px;">
+    <div style="background:var(--color-background-info);border:0.5px solid var(--color-border-info);border-radius:var(--border-radius-lg);padding:12px 16px;">
+      <p style="font-size:10px;font-weight:500;color:var(--color-text-info);letter-spacing:1.5px;margin-bottom:4px;">BOOK 1</p>
+      <p style="font-size:16px;font-weight:500;color:var(--color-text-info);margin-bottom:3px;">思考，快与慢</p>
+      <p style="font-size:11px;color:var(--color-text-info);">卡尼曼 · 大脑如何运作，偏差从哪里来</p>
+    </div>
+    <div style="background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:12px 16px;">
+      <p style="font-size:11px;font-weight:500;color:var(--color-text-secondary);margin-bottom:10px;">系统1 — 核心偏差</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;">
+        <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:8px 10px;"><p style="font-size:12px;font-weight:500;margin-bottom:2px;">可得性偏误</p><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.4;">越易想起，以为越常发生</p></div>
+        <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:8px 10px;"><p style="font-size:12px;font-weight:500;margin-bottom:2px;">锚定效应</p><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.4;">第一个数字拉着你走</p></div>
+        <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:8px 10px;"><p style="font-size:12px;font-weight:500;margin-bottom:2px;">框架效应</p><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.4;">说法变了，选择就反转</p></div>
+        <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:8px 10px;"><p style="font-size:12px;font-weight:500;margin-bottom:2px;">光环效应</p><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.4;">一个印象覆盖所有判断</p></div>
+        <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:8px 10px;"><p style="font-size:12px;font-weight:500;margin-bottom:2px;">损失厌恶</p><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.4;">损失痛苦是收益快乐的2倍</p></div>
+        <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:8px 10px;"><p style="font-size:12px;font-weight:500;margin-bottom:2px;">规划谬误</p><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.4;">内部视角让计划过于乐观</p></div>
+        <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:8px 10px;"><p style="font-size:12px;font-weight:500;margin-bottom:2px;">禀赋效应</p><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.4;">拥有后要价远高于买价</p></div>
+        <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:8px 10px;"><p style="font-size:12px;font-weight:500;margin-bottom:2px;">偏好逆转</p><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.4;">问法不同，选择就不同</p></div>
+      </div>
+    </div>
+    <div style="background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:12px 16px;">
+      <p style="font-size:11px;font-weight:500;color:var(--color-text-secondary);margin-bottom:10px;">系统2 — 激活工具</p>
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <div><p style="font-size:12px;font-weight:500;margin-bottom:1px;">外部视角</p><p style="font-size:11px;color:var(--color-text-secondary);">不问"我这次怎样"，问"这类事通常怎样"</p></div>
+        <div><p style="font-size:12px;font-weight:500;margin-bottom:1px;">宽框架</p><p style="font-size:11px;color:var(--color-text-secondary);">不孤立看单次决策，看同类决策整体期望</p></div>
+        <div><p style="font-size:12px;font-weight:500;margin-bottom:1px;">框架翻转</p><p style="font-size:11px;color:var(--color-text-secondary);">把收益说法换成损失说法再判断</p></div>
+        <div><p style="font-size:12px;font-weight:500;margin-bottom:1px;">风险政策</p><p style="font-size:11px;color:var(--color-text-secondary);">设定跨决策的统一规则，绕过情绪干扰</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;align-items:center;gap:8px;padding-top:84px;">
+    <div style="background:var(--color-background-success);border:0.5px solid var(--color-border-success);border-radius:var(--border-radius-md);padding:8px 10px;width:100%;text-align:center;"><p style="font-size:10px;font-weight:500;color:var(--color-text-success);margin-bottom:3px;">触发</p><p style="font-size:11px;color:var(--color-text-success);line-height:1.4;">系统1给出直觉</p></div>
+    <p style="font-size:16px;color:var(--color-text-secondary);">↓</p>
+    <div style="background:var(--color-background-success);border:0.5px solid var(--color-border-success);border-radius:var(--border-radius-md);padding:8px 10px;width:100%;text-align:center;"><p style="font-size:10px;font-weight:500;color:var(--color-text-success);margin-bottom:3px;">识别</p><p style="font-size:11px;color:var(--color-text-success);line-height:1.4;">这是偏差在起作用吗？</p></div>
+    <p style="font-size:16px;color:var(--color-text-secondary);">↓</p>
+    <div style="background:var(--color-background-success);border:0.5px solid var(--color-border-success);border-radius:var(--border-radius-md);padding:8px 10px;width:100%;text-align:center;"><p style="font-size:10px;font-weight:500;color:var(--color-text-success);margin-bottom:3px;">切换</p><p style="font-size:11px;color:var(--color-text-success);line-height:1.4;">启动系统2检验</p></div>
+    <p style="font-size:16px;color:var(--color-text-secondary);">↓</p>
+    <div style="background:var(--color-background-success);border:0.5px solid var(--color-border-success);border-radius:var(--border-radius-md);padding:8px 10px;width:100%;text-align:center;"><p style="font-size:10px;font-weight:500;color:var(--color-text-success);margin-bottom:3px;">结论</p><p style="font-size:11px;color:var(--color-text-success);line-height:1.4;">基于理由，非感受</p></div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:10px;">
+    <div style="background:var(--color-background-warning);border:0.5px solid var(--color-border-warning);border-radius:var(--border-radius-lg);padding:12px 16px;">
+      <p style="font-size:10px;font-weight:500;color:var(--color-text-warning);letter-spacing:1.5px;margin-bottom:4px;">BOOK 2</p>
+      <p style="font-size:16px;font-weight:500;color:var(--color-text-warning);margin-bottom:3px;">学会提问</p>
+      <p style="font-size:11px;color:var(--color-text-warning);">布朗 · 如何批判性地评估信息和论证</p>
+    </div>
+    <div style="background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:12px 16px;">
+      <p style="font-size:11px;font-weight:500;color:var(--color-text-secondary);margin-bottom:10px;">核心提问清单</p>
+      <div style="display:flex;flex-direction:column;gap:7px;">
+        <div style="display:flex;gap:10px;align-items:flex-start;"><div style="width:20px;height:20px;border-radius:50%;background:var(--color-background-warning);border:0.5px solid var(--color-border-warning);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span style="font-size:10px;font-weight:500;color:var(--color-text-warning);">1</span></div><div><p style="font-size:12px;font-weight:500;margin-bottom:1px;">结论是什么？</p><p style="font-size:11px;color:var(--color-text-secondary);">对方（或我）在主张什么？</p></div></div>
+        <div style="display:flex;gap:10px;align-items:flex-start;"><div style="width:20px;height:20px;border-radius:50%;background:var(--color-background-warning);border:0.5px solid var(--color-border-warning);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span style="font-size:10px;font-weight:500;color:var(--color-text-warning);">2</span></div><div><p style="font-size:12px;font-weight:500;margin-bottom:1px;">理由是什么？</p><p style="font-size:11px;color:var(--color-text-secondary);">支撑这个结论的依据在哪里？</p></div></div>
+        <div style="display:flex;gap:10px;align-items:flex-start;"><div style="width:20px;height:20px;border-radius:50%;background:var(--color-background-warning);border:0.5px solid var(--color-border-warning);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span style="font-size:10px;font-weight:500;color:var(--color-text-warning);">3</span></div><div><p style="font-size:12px;font-weight:500;margin-bottom:1px;">隐含假设是什么？</p><p style="font-size:11px;color:var(--color-text-secondary);">哪些前提被默认成立但未说出来？</p></div></div>
+        <div style="display:flex;gap:10px;align-items:flex-start;"><div style="width:20px;height:20px;border-radius:50%;background:var(--color-background-warning);border:0.5px solid var(--color-border-warning);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span style="font-size:10px;font-weight:500;color:var(--color-text-warning);">4</span></div><div><p style="font-size:12px;font-weight:500;margin-bottom:1px;">有没有歧义？</p><p style="font-size:11px;color:var(--color-text-secondary);">关键词是否清晰，定义有无模糊？</p></div></div>
+        <div style="display:flex;gap:10px;align-items:flex-start;"><div style="width:20px;height:20px;border-radius:50%;background:var(--color-background-warning);border:0.5px solid var(--color-border-warning);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span style="font-size:10px;font-weight:500;color:var(--color-text-warning);">5</span></div><div><p style="font-size:12px;font-weight:500;margin-bottom:1px;">推理有没有谬误？</p><p style="font-size:11px;color:var(--color-text-secondary);">逻辑链条是否成立？</p></div></div>
+        <div style="display:flex;gap:10px;align-items:flex-start;"><div style="width:20px;height:20px;border-radius:50%;background:var(--color-background-warning);border:0.5px solid var(--color-border-warning);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span style="font-size:10px;font-weight:500;color:var(--color-text-warning);">6</span></div><div><p style="font-size:12px;font-weight:500;margin-bottom:1px;">证据质量如何？</p><p style="font-size:11px;color:var(--color-text-secondary);">来源可靠吗？样本有代表性吗？</p></div></div>
+        <div style="display:flex;gap:10px;align-items:flex-start;"><div style="width:20px;height:20px;border-radius:50%;background:var(--color-background-warning);border:0.5px solid var(--color-border-warning);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span style="font-size:10px;font-weight:500;color:var(--color-text-warning);">7</span></div><div><p style="font-size:12px;font-weight:500;margin-bottom:1px;">有没有替代解释？</p><p style="font-size:11px;color:var(--color-text-secondary);">同样的事实还有别的解读吗？</p></div></div>
+        <div style="display:flex;gap:10px;align-items:flex-start;"><div style="width:20px;height:20px;border-radius:50%;background:var(--color-background-warning);border:0.5px solid var(--color-border-warning);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span style="font-size:10px;font-weight:500;color:var(--color-text-warning);">8</span></div><div><p style="font-size:12px;font-weight:500;margin-bottom:1px;">有没有信息被遗漏？</p><p style="font-size:11px;color:var(--color-text-secondary);">对方选择性展示了什么，忽略了什么？</p></div></div>
+      </div>
+    </div>
+    <div style="background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:12px 16px;">
+      <p style="font-size:11px;font-weight:500;color:var(--color-text-secondary);margin-bottom:10px;">偏差识别 → 对应提问</p>
+      <div style="display:flex;flex-direction:column;gap:7px;">
+        <div style="display:flex;align-items:flex-start;gap:8px;"><span style="font-size:10px;background:var(--color-background-info);color:var(--color-text-info);border:0.5px solid var(--color-border-info);border-radius:var(--border-radius-md);padding:2px 7px;flex-shrink:0;white-space:nowrap;margin-top:1px;">框架效应</span><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.5;">换一种说法，我的选择会变吗？</p></div>
+        <div style="display:flex;align-items:flex-start;gap:8px;"><span style="font-size:10px;background:var(--color-background-info);color:var(--color-text-info);border:0.5px solid var(--color-border-info);border-radius:var(--border-radius-md);padding:2px 7px;flex-shrink:0;white-space:nowrap;margin-top:1px;">可得性偏误</span><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.5;">这个例子有代表性吗？有没有被遗漏的反例？</p></div>
+        <div style="display:flex;align-items:flex-start;gap:8px;"><span style="font-size:10px;background:var(--color-background-info);color:var(--color-text-info);border:0.5px solid var(--color-border-info);border-radius:var(--border-radius-md);padding:2px 7px;flex-shrink:0;white-space:nowrap;margin-top:1px;">锚定效应</span><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.5;">第一个数字从哪来的？如果从别的起点出发呢？</p></div>
+        <div style="display:flex;align-items:flex-start;gap:8px;"><span style="font-size:10px;background:var(--color-background-info);color:var(--color-text-info);border:0.5px solid var(--color-border-info);border-radius:var(--border-radius-md);padding:2px 7px;flex-shrink:0;white-space:nowrap;margin-top:1px;">光环效应</span><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.5;">我的判断有没有被某个好印象整体带走？</p></div>
+        <div style="display:flex;align-items:flex-start;gap:8px;"><span style="font-size:10px;background:var(--color-background-info);color:var(--color-text-info);border:0.5px solid var(--color-border-info);border-radius:var(--border-radius-md);padding:2px 7px;flex-shrink:0;white-space:nowrap;margin-top:1px;">损失厌恶</span><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.5;">我是在评估事实，还是在逃避某种感受？</p></div>
+        <div style="display:flex;align-items:flex-start;gap:8px;"><span style="font-size:10px;background:var(--color-background-info);color:var(--color-text-info);border:0.5px solid var(--color-border-info);border-radius:var(--border-radius-md);padding:2px 7px;flex-shrink:0;white-space:nowrap;margin-top:1px;">规划谬误</span><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.5;">这类项目通常花多长时间？成功率是多少？</p></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div style="background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:16px 20px;">
+  <p style="font-size:15px;font-weight:500;margin-bottom:4px;">日常应用场景</p>
+  <p style="font-size:12px;color:var(--color-text-secondary);margin-bottom:16px;">识别系统1在起作用，用提问框架切换到系统2</p>
+  <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;">
+    <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-lg);padding:12px 14px;"><p style="font-size:13px;font-weight:500;margin-bottom:10px;">听别人讲观点</p><div style="display:flex;flex-direction:column;gap:6px;"><div style="display:flex;gap:6px;align-items:flex-start;"><span style="font-size:9px;font-weight:500;background:var(--color-background-info);color:var(--color-text-info);padding:2px 5px;border-radius:3px;flex-shrink:0;margin-top:1px;">识别</span><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.4;">是否因说话人的身份产生了光环效应</p></div><div style="display:flex;gap:6px;align-items:flex-start;"><span style="font-size:9px;font-weight:500;background:var(--color-background-warning);color:var(--color-text-warning);padding:2px 5px;border-radius:3px;flex-shrink:0;margin-top:1px;">提问</span><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.4;">结论是什么？支撑理由是什么？</p></div><div style="display:flex;gap:6px;align-items:flex-start;"><span style="font-size:9px;font-weight:500;background:var(--color-background-warning);color:var(--color-text-warning);padding:2px 5px;border-radius:3px;flex-shrink:0;margin-top:1px;">提问</span><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.4;">有没有被遗漏的信息或替代解释？</p></div></div></div>
+    <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-lg);padding:12px 14px;"><p style="font-size:13px;font-weight:500;margin-bottom:10px;">做购买决策</p><div style="display:flex;flex-direction:column;gap:6px;"><div style="display:flex;gap:6px;align-items:flex-start;"><span style="font-size:9px;font-weight:500;background:var(--color-background-info);color:var(--color-text-info);padding:2px 5px;border-radius:3px;flex-shrink:0;margin-top:1px;">识别</span><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.4;">注意锚定效应：第一个价格是谁设的</p></div><div style="display:flex;gap:6px;align-items:flex-start;"><span style="font-size:9px;font-weight:500;background:var(--color-background-info);color:var(--color-text-info);padding:2px 5px;border-radius:3px;flex-shrink:0;margin-top:1px;">识别</span><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.4;">注意框架效应：打折感和原价感可能一样</p></div><div style="display:flex;gap:6px;align-items:flex-start;"><span style="font-size:9px;font-weight:500;background:var(--color-background-warning);color:var(--color-text-warning);padding:2px 5px;border-radius:3px;flex-shrink:0;margin-top:1px;">提问</span><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.4;">如果只有这一个选项，我愿意付多少？</p></div></div></div>
+    <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-lg);padding:12px 14px;"><p style="font-size:13px;font-weight:500;margin-bottom:10px;">接收数据信息</p><div style="display:flex;flex-direction:column;gap:6px;"><div style="display:flex;gap:6px;align-items:flex-start;"><span style="font-size:9px;font-weight:500;background:var(--color-background-info);color:var(--color-text-info);padding:2px 5px;border-radius:3px;flex-shrink:0;margin-top:1px;">识别</span><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.4;">可得性偏误：这个例子是不是特别显眼</p></div><div style="display:flex;gap:6px;align-items:flex-start;"><span style="font-size:9px;font-weight:500;background:var(--color-background-warning);color:var(--color-text-warning);padding:2px 5px;border-radius:3px;flex-shrink:0;margin-top:1px;">提问</span><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.4;">来源可靠吗？样本有代表性吗？</p></div><div style="display:flex;gap:6px;align-items:flex-start;"><span style="font-size:9px;font-weight:500;background:var(--color-background-warning);color:var(--color-text-warning);padding:2px 5px;border-radius:3px;flex-shrink:0;margin-top:1px;">提问</span><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.4;">有没有被选择性遗漏的信息？</p></div></div></div>
+    <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-lg);padding:12px 14px;"><p style="font-size:13px;font-weight:500;margin-bottom:10px;">做职业决策</p><div style="display:flex;flex-direction:column;gap:6px;"><div style="display:flex;gap:6px;align-items:flex-start;"><span style="font-size:9px;font-weight:500;background:var(--color-background-info);color:var(--color-text-info);padding:2px 5px;border-radius:3px;flex-shrink:0;margin-top:1px;">识别</span><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.4;">损失厌恶：是在理性判断还是逃避损失</p></div><div style="display:flex;gap:6px;align-items:flex-start;"><span style="font-size:9px;font-weight:500;background:var(--color-background-info);color:var(--color-text-info);padding:2px 5px;border-radius:3px;flex-shrink:0;margin-top:1px;">识别</span><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.4;">把收益框架翻成损失框架再判断</p></div><div style="display:flex;gap:6px;align-items:flex-start;"><span style="font-size:9px;font-weight:500;background:var(--color-background-warning);color:var(--color-text-warning);padding:2px 5px;border-radius:3px;flex-shrink:0;margin-top:1px;">提问</span><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.4;">这类选择通常结果如何？（外部视角）</p></div></div></div>
+    <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-lg);padding:12px 14px;"><p style="font-size:13px;font-weight:500;margin-bottom:10px;">参与争论辩论</p><div style="display:flex;flex-direction:column;gap:6px;"><div style="display:flex;gap:6px;align-items:flex-start;"><span style="font-size:9px;font-weight:500;background:var(--color-background-info);color:var(--color-text-info);padding:2px 5px;border-radius:3px;flex-shrink:0;margin-top:1px;">识别</span><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.4;">是否因不喜欢对方而否定其观点</p></div><div style="display:flex;gap:6px;align-items:flex-start;"><span style="font-size:9px;font-weight:500;background:var(--color-background-warning);color:var(--color-text-warning);padding:2px 5px;border-radius:3px;flex-shrink:0;margin-top:1px;">提问</span><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.4;">对方的隐含假设是什么？我的呢？</p></div><div style="display:flex;gap:6px;align-items:flex-start;"><span style="font-size:9px;font-weight:500;background:var(--color-background-warning);color:var(--color-text-warning);padding:2px 5px;border-radius:3px;flex-shrink:0;margin-top:1px;">提问</span><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.4;">推理链条上有没有谬误？</p></div></div></div>
+    <div style="background:var(--color-background-secondary);border-radius:var(--border-radius-lg);padding:12px 14px;"><p style="font-size:13px;font-weight:500;margin-bottom:10px;">自我反思复盘</p><div style="display:flex;flex-direction:column;gap:6px;"><div style="display:flex;gap:6px;align-items:flex-start;"><span style="font-size:9px;font-weight:500;background:var(--color-background-info);color:var(--color-text-info);padding:2px 5px;border-radius:3px;flex-shrink:0;margin-top:1px;">识别</span><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.4;">这个决定是系统1还是系统2在主导</p></div><div style="display:flex;gap:6px;align-items:flex-start;"><span style="font-size:9px;font-weight:500;background:var(--color-background-warning);color:var(--color-text-warning);padding:2px 5px;border-radius:3px;flex-shrink:0;margin-top:1px;">提问</span><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.4;">换一种框架我还会这样选吗？</p></div><div style="display:flex;gap:6px;align-items:flex-start;"><span style="font-size:9px;font-weight:500;background:var(--color-background-warning);color:var(--color-text-warning);padding:2px 5px;border-radius:3px;flex-shrink:0;margin-top:1px;">提问</span><p style="font-size:11px;color:var(--color-text-secondary);line-height:1.4;">是记忆自我打分，还是体验自我的真实感受？</p></div></div></div>
+  </div>
+</div>
+</div>
+</body>
+</html>
